@@ -1,0 +1,98 @@
+
+{% load static %}
+{% include "header.html" %}
+
+<section class="about-us">
+    <img src="{% static 'images/about.png' %}" alt="Physiotherapy Banner">
+    <div class="about-text">
+        <h1>Contact Us</h1>
+        <p>
+            <a href="#">Home</a> /
+            <a href="#">Pages</a> /
+            <span class="active">Contact</span>
+        </p>
+    </div>
+</section>
+
+<div class="first-contact-container">
+  <div class="container-contact">
+    <div class="line"></div>
+    <div class="text-center">
+      <h1 class="text">Contact PhysioCare</h1>
+      <marquee behavior="scroll" direction="left"><h1 class="explore-service">Have Any query? Contact Us</h1></marquee>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <p class="text-center mb-4">
+          "Connect with us by completing the form below. Our dedicated team will respond to your enquiry as soon as possible."
+        </p>
+
+        <div class="contact-info-cards">
+          <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Visit Us</h4>
+            <h6>Jamshedpur, Jharkhand, India</h6>
+          </div>
+
+          <div class="info">
+            <i class="fas fa-envelope"></i>
+            <h4>Email Us</h4>
+            <h6>info@example.com</h6>
+          </div>
+
+          <div class="info">
+            <i class="fas fa-phone"></i>
+            <h4>Call Us</h4>
+            <h6>+012 345 6789</h6>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <div class="wow fadeIn" data-wow-delay="0.3s">
+            <form method="POST">
+              {% csrf_token %}
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" name="message" placeholder="Leave a message here" style="height: 100px" required></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+
+                <div class="form-last-btn">
+                  <button type="submit" class="form-button">SEND MESSAGE</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}
+

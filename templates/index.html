@@ -1,0 +1,136 @@
+{% load static %}
+{% include 'header.html' %}
+
+ <section class="hero-carousel">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <!-- first slide -->
+    <div class="carousel-item active">
+      <img src="{% static 'images/carausol img2.png' %}" class="d-block w-100" alt="physiocare1">
+      <div class="carousel-caption d-flex flex-column justify-content-center">
+        <div class="carousel-content text-center">
+        <h2>PHYSIOTHERAPY CENTER</h2>
+        <h1>Best Solution for Painful Life</h1>
+        <p>"Your body deserves the best care — trust PhysioCare to guide your healing every step of the way."</p>
+        <div class="booking">
+        <a href="{% url 'Appointment' %}" id="book">Book Appointment</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      <!-- second slide -->
+    <div class="carousel-item" >
+      <img src="{% static 'images/carousel-2.png' %}" class="d-block w-100" alt="physiocare2">
+      <div class="carousel-caption d-flex flex-column justify-content-center">
+        <div class="carousel-content text-center">
+        <h2>PHYSIOTHERAPY CENTER</h2>
+        <h1>Best Solution for Painful Life</h1>
+        <p>"Your body deserves the best care — trust PhysioCare to guide your healing every step of the way."</p>
+          <div class="booking">
+        <a href="{% url 'Appointment' %}" id="book">Book Appointment</a>
+        </div>
+        </div>
+      </div>
+      </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </div>
+    </section>
+    
+      <div class="first-page">         
+          <div class="container py-5 text-center">
+            <div class="triple-line">
+            </div>
+            <h4 class="section-subtitle">Your Health,Our priority</h4>
+            <h1 class="section-title">Expert Physiotherapy Care for a<br>Healthier You.</h1>
+            <p class="section-description"> At PhysioCare, we offer personalized physiotherapy treatments designed to relieve pain, restore mobility, and improve your overall well-being. Our certified therapists use advanced techniques and a compassionate approach to help you recover faster and live healthier. Whether you're healing from an injury or managing chronic discomfort, we’re here to support your journey to better health.</p>
+          </div> 
+
+            <div class="services-grid">
+              <div class="service-items">
+                <img src="{% static 'images/image1.png' %}" alt="Physical Rehabilitation Therapy">
+                <div class="service-content">
+                  <h3>Physical Rehabilitation Therapy</h3>
+                  <p>Physical rehabilitation therapy restores movement and function after injury through exercises and techniques.</p>
+                  <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+                </div>
+              </div>
+
+              <div class="service-items"> 
+                <img src="{% static 'images/image2.png' %}" alt="Manual Physioherapy">
+                <div class="service-content">
+                  <h3>Manual Physio Therapy</h3>
+                  <p>Manual physiotherapy uses hands-on techniques to relieve pain, improve mobility, and restore function.</p>
+                  <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+                </div>
+              </div>
+
+              <div class="service-items">
+                <img src="{% static 'images/image3.png' %}" alt="Massage Therapy">
+                <div class="service-content">
+                  <h3>Massage Therapy</h3>
+                  <p>Massage therapy uses manual pressure and movements to relax muscles, reduce pain, and improve blood circulation.</p>
+                  <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+                </div>
+                </div>
+
+              <div class="service-items">
+               <img src="{% static 'images/image4.png' %}" alt="Electro Therapy">
+               <div class="service-content">
+                <h3>Electro Therapy</h3>
+                <p>Electrotherapy uses controlled electrical currents to reduce pain, stimulate muscles, and speed up healing.</p>
+                <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+              </div>
+              </div>
+
+              <div class="service-items">
+               <img src="{% static 'images/image5.png' %}" alt="Deep Tissue Therapy">
+               <div class="service-content">
+                <h3>Deep Tissue Therapy</h3>
+                <p>Deep tissue therapy targets deeper muscle layers to relieve tension, improve mobility, and promote recovery.</p>
+                <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+              </div>
+              </div>
+
+              <div class="service-items">
+              <img src="{% static 'images/image6.png' %}" alt="Deep Tissue Therapy">
+              <div class="service-content">
+                <h3>Exercise Therapy</h3>
+                <p>Exercise therapy uses targeted movements to restore strength, flexibility, and overall physical function.</p>
+                <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+              </div>
+              </div>
+
+              <div class="service-items">
+              <img src="{% static 'images/image7.png' %}" alt="Physical Rehabilitation Therapy">
+              <div class="service-content">
+                <h3>Physical Rehabilitation Therapy</h3>
+                <p>Physical rehabilitation therapy restores movement and function after injury through exercises and techniques.</p>
+                <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+              </div>
+              </div>
+
+            <div class="service-items">
+              <img src="{% static 'images/image8.png' %}" alt="Orthotic Therapy">
+              <div class="service-content">
+                <h3>Orthotic Therapy</h3>
+                <p>Orthotic therapy uses custom devices to support, align, or correct posture and improve movement efficiency.</p>
+                <a href="{% url 'ourblog' %}" class="read-more">Read More</a>
+                </div>
+              </div>
+              <div class="service-btn1">Services</div>
+            </div>
+
+
+{% include 'footer.html' %}
+
+

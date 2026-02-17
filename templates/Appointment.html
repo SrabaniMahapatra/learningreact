@@ -1,0 +1,85 @@
+
+{% load static %}
+{% include "header.html" %}
+
+<section class="about-us">
+    <img src="{% static 'images/about.png' %}" alt="Physiotherapy Banner">
+    <div class="about-text">
+        <h1>Book Appointment</h1>
+        <p>
+            <a href="#">Home</a> /
+            <a href="#">Pages</a> /
+            <span class="active">Appointment</span>
+        </p>
+    </div>
+</section>
+
+<section class="appointment-section">
+  <div class="container-box">
+    
+    <!-- Left Side things -->
+    <div class="left-content">
+      <div class="sub-lining"></div>
+      <h6 class="sub-title">SOLUTIONS TO YOUR PAIN</h6>
+      <h2 class="main-title">Best Quality Services With Minimal Pain Rate</h2>
+      <p class="description">
+        We provide expert care with minimal discomfort.Gentle techniques speed up your recovery.Your comfort and well-being come first
+      </p>
+      
+      <ul class="feature-list">
+        <li><i class="fa-solid fa-check"></i> Body Relaxation</li>
+        <p>Relieve tension and soothe your mind with gentle, calming techniques.Promotes better sleep, reduced stress, and overall well-being.</p>
+        <li><i class="fa-solid fa-check"></i> Therapy Sessions</li>
+        <p>Personalized sessions tailored to your specific needs and goals.Enhances mobility, strength, and long-term physical health.</p>
+        <li><i class="fa-solid fa-check"></i> Muscle Recovery</li>
+        <p>Speeds up healing after injury or intense workouts.Reduces soreness and restores optimal muscle performance.</p>
+      </ul>
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="right-form">
+      <h6 class="form-subtitle">GET IN TOUCH</h6>
+      <h3 class="form-title">Get Appointment</h3>
+      
+      <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="age" placeholder="Enter your age" min="1" max="120" required>
+        <input type="date" name="date" required>
+        
+        <select name="gender" required>
+          <option value="">Your Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <select name="department" required>
+          <option value="">Department</option>
+          <option>Physiotherapy</option>
+          <option>Massage Therapy</option>
+          <option>Rehabilitation Therapy</option>
+          <option>Orthotic Therapy</option>
+          <option>Exercise Therapy</option>
+          <option>Deep Tissue Therapy</option>
+          <option>Electro Therapy</option>
+          <option>Manual Physio Therapy</option>
+        </select>
+
+        <select name="doctor_gender" required>
+          <option value="">Preferred Doctor</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <textarea name="concern" placeholder="Any Special Concern"></textarea>
+
+        <button type="submit" class="btn-submit">SUBMIT NOW</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% include "footer.html" %}

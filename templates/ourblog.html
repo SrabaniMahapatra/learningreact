@@ -1,0 +1,65 @@
+
+{% load static %}
+{% include 'header.html' %}
+
+
+  <section class="about-us">
+        <img src="{% static 'images/about.png' %}" alt="Physiotherapy Banner">
+        <div class="about-text">
+            <h1>Blog</h1>
+      <p>
+        <a href="#">Home</a> /
+        <a href="#">Pages</a> /
+        <span class="active">blog</span>
+      </p>
+        </div>
+    </section>
+
+
+  <!-- Blog Hero Section -->
+<div class="ourblog">
+  <section class="blog-hero">
+    <div class="hero-text">
+      <div class="blog-lining"></div>
+      <p class="subtitle">OUR BLOG</p>
+      <h1>Excellent Facility and High Quality Therapy</h1>
+      <p>We provide state-of-the-art facilities and personalized therapy programs designed to meet your individual needs. Our experienced physiotherapists use advanced techniques to ensure effective and safe treatment. At our clinic, comfort and care go hand in hand, helping you recover faster and maintain a healthy, active lifestyle.</p>
+    </div>
+  </section>
+
+  <!-- Blog List Section -->
+  <section class="blog-list">
+    <div class="blog-card">
+      <img src="{% static 'images/blog-1.png' %}" alt="Blog Image">
+      <div class="blog-content">
+        <p class="meta"><span><i class="fa-solid fa-calendar-days"></i> 01 Jan 2045</span> | <span><i class="fa-solid fa-comment"></i> 5 Comments</span></p>
+        <h2>Regular exercise can slow ageing process</h2>
+        <p>“Staying active is not just about fitness, it's about youthfulness. Regular exercise boosts energy, strengthens immunity, and keeps your body and mind younger for longer.”</p>
+        <a href="{% url 'Appointment' %}" class="btn">Know More</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="{% static 'images/blog-2.png' %}" alt="Blog Image">
+      <div class="blog-content">
+        <p class="meta"><span><i class="fa-solid fa-calendar-days"></i> 01 Jan 2045</span> | <span><i class="fa-solid fa-comment"></i> 5 Comments</span></p>
+        <h2>Benefits of a weekly physiotherapy session</h2>
+        <p>“Regular physiotherapy care helps you recover faster, prevent chronic issues, and maintain a healthier lifestyle. Just one session a week can make a lasting difference in your wellbeing.”</p>
+        <a href="{% url 'Appointment' %}" class="btn">Know More</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="{% static 'images/blog3.png' %}" alt="Blog Image">
+      <div class="blog-content">
+        <p class="meta"><span><i class="fa-solid fa-calendar-days"></i> 01 Jan 2045</span> | <span><i class="fa-solid fa-comment"></i> 5 Comments</span></p>
+        <h2>Remove back pain while working on a physio</h2>
+        <p>“Long working hours and heavy workload often trigger back pain, but physiotherapy offers lasting relief. With guided exercises and posture correction, you can work pain-free and stay productive.”</p>
+        <a href="{% url 'Appointment' %}" class="btn">Know More</a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+
+{% include 'footer.html' %}

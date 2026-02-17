@@ -1,0 +1,66 @@
+
+{% load static %}
+
+
+<!-- Footer Start -->
+<footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-col">
+      <h2 class="footer-logo"><i class="fas fa-heart-pulse"></i> PhysioCare</h2>
+      <p>PhysioCare is your trusted partner in achieving a pain-free, active lifestyle.Our mission is to help you heal, recover, and regain your strength with compassion and expertise.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'Contactus' %}">Contact Us</a></li>
+        <li><a href="{% url 'services' %}">Our Services</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="{% url 'team' %}">Our Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>PhysioCare Services</h4>
+      <ul>
+        <li><a href="{% url 'services' %}">All Services</a></li>
+        <li><a href="#">Physiotherapy</a></li>
+        <li><a href="#">Diagnostics</a></li>
+        <li><a href="#">Manual Therapy</a></li>
+        <li><a href="#">Massage Therapy</a></li>
+        <li><a href="#">Rehabilitation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> Jamshedpur , Jharkhand, India</li>
+        <li><i class="fas fa-phone"></i> +012 345 67890</li>
+        <li><i class="fas fa-envelope"></i> info@example.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright-bar">
+   <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>PhysioCare</a>, All right reserved.</span>
+</div>
+
+<!-- Footer End -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="{% static 'javascript/script.js' %}"></script> 
+</body>
+</html>

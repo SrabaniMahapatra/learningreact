@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logged Out</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+    <div id="logout-page">
+  <div class="logout-container">
+    <h2>You have been logged out!</h2>
+
+    {% if messages %}
+        <div class="messages">
+          {% for message in messages %}
+            <p class="{{ message.tags }}">{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    <p>Thank you for visiting. Please login again to continue.</p>
+    <a href="{% url 'login' %}">Login Again</a>
+  </div>
+  </div>
+</body>
+</html>
