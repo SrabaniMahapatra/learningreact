@@ -1,29 +1,34 @@
 import React from 'react'
-// import Welcome from './Welcome'
-// import Counter from './counter'
-import Todo from "./Todo";
-
+import NavBar from "./Component/NavBar";
+import MainRoutes from "./Component/MainRoutes";
 // import './App.CSS'
+// import Welcome from './Welcome'
+// import Counter from './Component/counter'
+// import Todo from "./Todo";
+// import Counter from './Count'
+// import TicketBooking  from "./Reducer/TicketBooking";
+// import API from "./Component/API";
+
+
+
 
 // function App() {
-//   return (
-//     <div>
-//       <Welcome/>
-//     </div>
-//   )
+  // return (
+    // <div>
+    {/* <h1>Ticket Booking</h1> */}
+    {/* <Count/> */}
+    {/* <Counter/> */}
+    {/* <TicketBooking/> */}
+    {/* <Welcome/> */}
+    {/* <Counter/>       */}
+    {/* <ColorChange/> */}
+    {/* <Todo /> */}
+    {/* <API/> */}
+    // </div>
+  // )
 
 // }
 
-
-// function App() {
-//   return (
-//     <div>
-//       {/* <Counter/>       */}
-//      <ColorChange/>
-//     </div>
-//   )
-
-//  }
 
 
 
@@ -46,15 +51,15 @@ import Todo from "./Todo";
 // }
 
 
+
 function App() {
   return (
     <div>
-      <Todo />
+      <h1>My Website</h1>
+      <NavBar />      
+      <MainRoutes />  
     </div>
   );
 }
 
-
-
-
-export default App
+export default App;
